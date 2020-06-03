@@ -72,7 +72,7 @@ class XeroOauthComponent extends Component
             'urlAuthorize' => $this->getConfig('urlAuthorize'),
             'urlAccessToken' => $this->getConfig('urlAccessToken'),
             'urlResourceOwnerDetails' => $this->getConfig('urlResourceOwnerDetails'),
-            'scope' => implode(' ', Configure::read('scope')),
+            'scope' => implode(' ', Configure::read('XeroOauth2.scope')),
         ];
     }
 
