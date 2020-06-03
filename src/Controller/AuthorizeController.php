@@ -15,12 +15,10 @@ class AuthorizeController extends AppController
     public function index()
     {
         $provider = $this->XeroOauth->getProvider();
-        $options = [
-            'scope' => ['openid email profile offline_access accounting.settings accounting.transactions accounting.contacts accounting.journals.read accounting.reports.read accounting.attachments']
-        ];
+        $config = $this->XeroOauth->getConfigurations();
 
         // This returns the authorizeUrl with necessary parameters applied (e.g. state).
-        $authorizationUrl = $provider->getAuthorizationUrl($options);
+        $authorizationUrl = $provider->getAuthorizationUrl(['scope' => $config['scope']]);
 
         // Save the state generated for you and store it to the session.
         // For security, on callback we compare the saved state with the one returned to ensure they match.
