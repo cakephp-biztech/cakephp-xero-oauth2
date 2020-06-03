@@ -56,6 +56,10 @@ return [
 
 After creating the configuration file, make sure to load the file in your `bootstrap.php` using `Configure::load('xero_config', 'default');`.
 
+**Important:**
+
+When you create your Xero API App you must have to specify 'OAuth 2.0 redirect URI' to https://your-website.com/xero-oauth2/callback (replace your "https://your-website.com" with your website URL).
+
 ## Usage
 
 This plugin ships with `XeroOauth` component which can be used to get the instance of:
