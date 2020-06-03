@@ -3,6 +3,11 @@
     "description": "XeroOauth2 plugin for CakePHP",
     "type": "cakephp-plugin",
     "license": "MIT",
+    "homepage": "https://github.com/ishan-biztech/cakephp-xero-oauth2",
+    "support": {
+        "issues": "https://github.com/ishan-biztech/cakephp-xero-oauth2/issues",
+        "source": "https://github.com/ishan-biztech/cakephp-xero-oauth2"
+    },
     "require": {
         "cakephp/cakephp": "^3.5",
         "xeroapi/xero-php-oauth2": "1.6.5"
