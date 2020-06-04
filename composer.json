@@ -1,6 +1,6 @@
 {
     "name": "ishan-biztech/cakephp-xero-oauth2",
-    "description": "XeroOauth2 plugin for CakePHP",
+    "description": "Xero Oauth2 API plugin for CakePHP",
     "type": "cakephp-plugin",
     "license": "MIT",
     "homepage": "https://github.com/ishan-biztech/cakephp-xero-oauth2",
