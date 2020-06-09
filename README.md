@@ -1,5 +1,10 @@
 # Xero OAuth2 API plugin for CakePHP 3.x
 
+[![Latest Stable Version](https://poser.pugx.org/ishan-biztech/cakephp-xero-oauth2/v)](//packagist.org/packages/ishan-biztech/cakephp-xero-oauth2)
+[![Total Downloads](https://poser.pugx.org/ishan-biztech/cakephp-xero-oauth2/downloads)](//packagist.org/packages/ishan-biztech/cakephp-xero-oauth2)
+[![License](https://poser.pugx.org/ishan-biztech/cakephp-xero-oauth2/license)](//packagist.org/packages/ishan-biztech/cakephp-xero-oauth2)
+[![Latest Unstable Version](https://poser.pugx.org/ishan-biztech/cakephp-xero-oauth2/v/unstable)](//packagist.org/packages/ishan-biztech/cakephp-xero-oauth2)
+
 This plugin provides access to Xero OAuth2 API. This plugin is wrapper around [Xero PHP official SDK](https://github.com/XeroAPI/xero-php-oauth2/).
 
 ## Requirements
