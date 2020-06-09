@@ -5,7 +5,7 @@
 [![License](https://poser.pugx.org/ishan-biztech/cakephp-xero-oauth2/license)](//packagist.org/packages/ishan-biztech/cakephp-xero-oauth2)
 [![Latest Unstable Version](https://poser.pugx.org/ishan-biztech/cakephp-xero-oauth2/v/unstable)](//packagist.org/packages/ishan-biztech/cakephp-xero-oauth2)
 
-This plugin provides access to Xero OAuth2 API. This plugin is wrapper around [Xero PHP official SDK](https://github.com/XeroAPI/xero-php-oauth2/).
+This plugin provides access to Xero OAuth2 API for [CakePHP](https://cakephp.org/). This plugin is wrapper around [Xero PHP official SDK](https://github.com/XeroAPI/xero-php-oauth2/).
 
 ## Requirements
 
