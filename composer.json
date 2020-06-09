@@ -1,9 +1,25 @@
 {
     "name": "ishan-biztech/cakephp-xero-oauth2",
-    "description": "XeroOauth2 plugin for CakePHP",
+    "description": "Xero OAuth2 API plugin for CakePHP 3.x",
     "type": "cakephp-plugin",
+    "keywords": [
+        "cakephp",
+        "cakephp-plugin",
+        "xero",
+        "xero-api",
+        "oauth2",
+        "sdk",
+        "api"
+    ],
     "license": "MIT",
     "homepage": "https://github.com/ishan-biztech/cakephp-xero-oauth2",
+    "authors": [
+        {
+            "name": "Ishan Biztech",
+            "homepage": "https://github.com/ishan-biztech",
+            "role": "Author"
+        }
+    ],
     "support": {
         "issues": "https://github.com/ishan-biztech/cakephp-xero-oauth2/issues",
         "source": "https://github.com/ishan-biztech/cakephp-xero-oauth2"
