@@ -52,7 +52,7 @@ return [
             'offline_access',
             'accounting.settings',
             'accounting.contacts',
-            // Any other scopes goes her
+            // Any other scopes goes here
         ],
         'successUrl' => 'http://example.com/success'
     ]
