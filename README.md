@@ -35,35 +35,35 @@ This plugin provides access to Xero OAuth2 API for [CakePHP](https://cakephp.org
 ## Setup
 Now create new file to set your Xero App details.
 
-Create new file `xero_config.php` in `config` directory:
+1. Create new file `xero_config.php` in `config` directory:
+    ```php
+    <?php
 
-```php
-<?php
+    return [
+        'XeroOauth2' => [
+            'clientId' => 'your-client-id',
+            'clientSecret' => 'your-client-secret',
+            'baseUri' => 'https://example.com',
+            'scope' => [
+                'openid',
+                'email',
+                'profile',
+                'offline_access',
+                'accounting.settings',
+                'accounting.contacts',
+                // Any other scopes needed for your application goes here
+            ],
+            'successUrl' => 'http://example.com/success'
+        ]
+    ];
+    ```
 
-return [
-    'XeroOauth2' => [
-        'clientId' => 'your-client-id',
-        'clientSecret' => 'your-client-secret',
-        'baseUri' => 'https://example.com',
-        'scope' => [
-            'openid',
-            'email',
-            'profile',
-            'offline_access',
-            'accounting.settings',
-            'accounting.contacts',
-            // Any other scopes needed for your application goes here
-        ],
-        'successUrl' => 'http://example.com/success'
-    ]
-];
-```
+    **Note:** Do not forget to replace "https://example.com" with your website URL in your `config/xero_config.php` file.
 
-**Note:**
-- Do not forget to replace "https://example.com" with your website URL in your `config/xero_config.php` file.
-- Success url(`XeroOauth2.successUrl`) must end with `/success`, so do not remove it while replacing it with your website URL.
-
-After creating the configuration file, make sure to load the file in your `bootstrap.php` using `Configure::load('xero_config', 'default');`.
+2. After creating the configuration file, make sure to load the file in your `bootstrap.php`:
+    ```php
+    Configure::load('xero_config', 'default');
+    ```
 
 **Important:**
 
