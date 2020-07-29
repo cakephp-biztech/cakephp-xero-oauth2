@@ -40,9 +40,6 @@ Create new file `xero_config.php` in `config` directory:
 ```php
 <?php
 
-/**
- * Do not forget to replace "https://example.com" with your website URL
- */
 return [
     'XeroOauth2' => [
         'clientId' => 'your-client-id',
@@ -57,11 +54,14 @@ return [
             'accounting.contacts',
             // Any other scopes needed for your application goes here
         ],
-        // Must end with `/success` so do not remove it while replacing it with your website URL
         'successUrl' => 'http://example.com/success'
     ]
 ];
 ```
+
+**Note:**
+- Do not forget to replace "https://example.com" with your website URL in your `config/xero_config.php` file.
+- Success url(`XeroOauth2.successUrl`) must end with `/success`, so do not remove it while replacing it with your website URL.
 
 After creating the configuration file, make sure to load the file in your `bootstrap.php` using `Configure::load('xero_config', 'default');`.
 
