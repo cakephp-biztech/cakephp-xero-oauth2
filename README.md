@@ -40,6 +40,9 @@ Create new file `xero_config.php` in `config` directory:
 ```php
 <?php
 
+/**
+ * Do not forget to replace "https://example.com" with your website URL
+ */
 return [
     'XeroOauth2' => [
         'clientId' => 'your-client-id',
@@ -52,8 +55,9 @@ return [
             'offline_access',
             'accounting.settings',
             'accounting.contacts',
-            // Any other scopes goes here
+            // Any other scopes needed for your application goes here
         ],
+        // Must end with `/success` so do not remove it while replacing it with your website URL
         'successUrl' => 'http://example.com/success'
     ]
 ];
@@ -63,7 +67,7 @@ After creating the configuration file, make sure to load the file in your `boots
 
 **Important:**
 
-When you create your Xero API App you must have to specify 'OAuth 2.0 redirect URI' to https://your-website.com/xero-oauth2/callback (replace your "https://your-website.com" with your website URL).
+When you create your Xero API App you must have to specify 'OAuth 2.0 redirect URI' to https://your-website.com/xero-oauth2/callback (replace "https://your-website.com" with your website URL).
 
 ## Usage
 
