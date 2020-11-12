@@ -26,7 +26,7 @@
     },
     "require": {
         "cakephp/cakephp": "^3.5",
-        "xeroapi/xero-php-oauth2": "1.6.5"
+        "xeroapi/xero-php-oauth2": "^2.1"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.7.14|^6.0"
