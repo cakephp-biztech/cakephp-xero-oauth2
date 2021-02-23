@@ -55,6 +55,19 @@ class CallbackController extends AppController
 
         // Store token details
         $this->loadComponent('XeroOauth2.Storage');
+
+        if ($this->Storage->getAccessToken()) {
+            $this->Storage->updateToken(
+                $accessToken->getToken(),
+                $result[0]->getTenantId(),
+                $accessToken->getRefreshToken(),
+                $accessToken->getValues()['id_token'],
+                $accessToken->getExpires()
+            );
+
+            return $this->redirect(Configure::read('XeroOauth2.successUrl'));
+        }
+        
         $this->Storage->setToken(
             $accessToken->getToken(),
             $result[0]->getTenantId(),
